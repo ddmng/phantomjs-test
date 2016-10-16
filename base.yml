@@ -1,0 +1,8 @@
+version: "2"
+services:
+  phantom:
+    build: .
+    image: rdaneel/phantomtest
+    volumes:
+      - ${PWD}/pages:/usr/src/app/pages
+      - ${PWD}/requests:/usr/src/app/requests
